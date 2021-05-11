@@ -19,7 +19,7 @@ input = gets.strip
 index = input_to_index(input)
 
 #Calls #move with the board array and the stored array index. The third argument, player_character, has been set to default "X" at #move.
-move(board, index) #the 3'rd argument isnt specified here as the default for this is set to X as a method hasnt been defined yet to specify which "X" or "O", the payer is
+move(board, index)
 
-
+#Displays the board with the players move
 display_board(board)
