@@ -7,7 +7,10 @@ require_relative '../lib/move.rb'
 puts "Welcome to Tic Tac Toe!"
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 puts "Where would you like to go?"
+
 input = gets.strip
+
 index = input_to_index(input)
+
 move(board, index) #the 3'rd argument isnt specified here as the default for this is set to X as a method hasnt been defined yet to specify which "X" or "O", the payer is
 display_board(board)
