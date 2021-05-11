@@ -5,17 +5,20 @@ require_relative '../lib/move.rb'
 # Code your CLI Here
 
 puts "Welcome to Tic Tac Toe!"
+
+#Sets empty board array
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+
 puts "Where would you like to go?"
 
 
 #Gets the users input and removes any leading or trailing spaces and assign it to variable 'input'.
 input = gets.strip
 
-#Calls #input_to_index with the argument input variable set above. This returns 
+#Calls #input_to_index with the argument input variable set above. This returns the appropriate array index assigned to variable 'index'.
 index = input_to_index(input)
 
-
+#Calls #move with the board array and the stored array index. The third argument has been set to default "X" at #move.
 move(board, index) #the 3'rd argument isnt specified here as the default for this is set to X as a method hasnt been defined yet to specify which "X" or "O", the payer is
 
 
