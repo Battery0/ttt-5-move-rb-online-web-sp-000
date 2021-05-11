@@ -8,6 +8,7 @@ end
 
 # code your input_to_index and move method here!
 
+#input_to_index - takes the users input, converts from string to integer and subtracts one. This sets up an entry with the board arayThus alining with the board array index.
 def input_to_index(input)
   input.to_i - 1
 end
