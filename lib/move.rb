@@ -8,11 +8,12 @@ end
 
 # code your input_to_index and move method here!
 
-#input_to_index - takes the users input, converts from string to integer and subtracts one. This sets up an entry with the board arayThus alining with the board array index.
+#input_to_index - takes the users number input, converts from string to integer and subtracts one. This sets up the index for the board array.
 def input_to_index(input)
   input.to_i - 1
 end
 
+#move - Takes in the board array, the output of the #input_to_index and the players character "X" or "O". The method assigns the value of the players character to the users chosen space on the board.
 def move(board, input_to_index, player_character = "X")
   board[input_to_index] = player_character
 end
