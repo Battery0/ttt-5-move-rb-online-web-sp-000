@@ -12,7 +12,7 @@ puts "Where would you like to go?"
 #Gets the users input and removes any leading or trailing spaces and assign it to variable 'input'.
 input = gets.strip
 
-#
+#Calls #input_to_index with the argument input variable set above. This returns 
 index = input_to_index(input)
 
 
